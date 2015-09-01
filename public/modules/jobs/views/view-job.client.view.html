@@ -13,12 +13,12 @@
 						<i class="glyphicon glyphicon-trash"></i>
 					</a>
 				</div>
-				<p>Company: {{job.company}}</p>
-				<p>Description: {{job.description}}</p>
-				<p>Requirements: {{job.requirements}}</p>
-				<p>Hourly Wage: {{job.hourly_wage|currency}}/hr</p>
-				<p>State: {{job.state}}</p>
-				<p>Email: {{job.email}}</p>
+					<p>Company: {{job.company}}</p>
+					<p>Description: {{job.description}}</p>
+					<p>Requirements: {{job.requirements}}</p>
+					<p>Hourly Wage: {{job.hourly_wage|currency}}/hr</p>
+					<p>State: {{job.state}}</p>
+					<p>Email: <a ng-href="mailto:{{job.email}}">{{job.email}}</a></p>
 				<small>
 					<em class="text-muted">
 					Posted on
@@ -30,4 +30,6 @@
 			</div>
 		</div>
 	</div>
+	<br><br>
+	<a href="/#!/jobs" class="btn btn-primary" >Go Back</a>
 </section>

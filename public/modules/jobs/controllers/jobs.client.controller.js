@@ -23,13 +23,13 @@ angular.module('jobs').controller('JobsController', ['$scope', '$stateParams', '
         $location.path('jobs/' + response._id);
 
         // Clear form fields
-        this.company = '';
-        this.title = '';
-        this.description = '';
-        this.requirements = '';
-        this.hourly_wage = '';
-        this.state = '';
-        this.email = '';
+        $scope.company = '';
+        $scope.title = '';
+        $scope.description = '';
+        $scope.requirements = '';
+        $scope.hourly_wage = '';
+        $scope.state = '';
+        $scope.email = '';
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;
       });
